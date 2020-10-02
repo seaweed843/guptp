@@ -1,5 +1,6 @@
 # guptp
 Golang URI Path Template Parser
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Supported field types
 ```
