@@ -40,11 +40,11 @@ import "github.com/seaweed843/guptp"
 import "fmt"
 
 func main() {
-	uri :=`/api/v1/create/843/Sea%20Weed`
+	uriPath :=`/api/v1/create/843/Sea%20Weed`
 	template := `/api/v1/{Op}/{Id}/{Name}`
 
 	//To map[string]string
-	mapGot := guptp.ParseUriPathToMapStr(&uri, &template)
+	mapGot := guptp.ParseUriPathToMapStr(&uriPath, &template)
 	fmt.Println(mapGot["Id"])
 	//expected output: "843"
 
@@ -53,7 +53,7 @@ func main() {
 
 	//To struct's fields
 	structGot := struct{Op string; Id int; Name string}{}
-	err := guptp.ParseUriPathToFields(&uri, &template, &structGot)
+	err := guptp.ParseUriPathToFields(&uriPath, &template, &structGot)
 	if err == nil {
 		fmt.Println(structGot.Id)
 		//expected output: 843
