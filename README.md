@@ -1,6 +1,23 @@
 # guptp
 Golang URI Path Template Parser
 
+## Supported field types
+```
+bool
+
+string
+
+int  int8  int16  int32  int64
+uint uint8 uint16 uint32 uint64
+
+byte 
+
+float32 float64
+
+time.Time
+
+```
+
 ## Adding dependency
 ```
 import "github.com/seaweed843/guptp"
