@@ -1,12 +1,12 @@
 # guptp
 Golang URI Path Template Parser
 
-##Adding dependency
+## Adding dependency
 ```
 import "github.com/seaweed843/guptp"
 ```
 
-##Example:
+## Example:
 
 init module:
 ```
